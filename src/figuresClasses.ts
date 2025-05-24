@@ -86,7 +86,7 @@ export class Rectangle implements Figure {
 
   constructor(color: Color, width: number, height: number) {
     if (width <= 0 || height <= 0) {
-      throw new Error('Sides do not satisfy the triangle inequality');
+      throw new Error('Width and height must be greater than 0');
     }
 
     this.shape = 'rectangle';
